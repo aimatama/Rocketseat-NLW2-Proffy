@@ -28,7 +28,7 @@ O projeto Proffy foi desenvolvido no evento **[Next Level Week #2](https://nextl
 
 ## 🏁 Status do projeto
 
-🚧  Em construção...  🚧
+🚧  Em construção...
 
 --- 
 
