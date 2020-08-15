@@ -1,40 +1,59 @@
 import React from 'react';
-
+import api from '../../services/api';
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
 import './styles.css';
 
-function TeacherItem() {
+export interface Teacher {
+  avatar: string;
+  bio: string;
+  cost: number;
+  id: number;
+  name: string;
+  subject: string;
+  whatsapp: string;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+  function createNewConnection() {
+    api.post('connections', {
+      user_id: teacher.id,
+    });
+  }
+
   return (
     <article className="teacher-item">
       <header>
         <img
           src="https://conteudo.imguol.com.br/c/esporte/64/2020/02/19/andrea-pirlo-ex-jogador-italiano-que-virou-comentarista-da-sky-sports-1582129806165_v2_900x506.jpg"
-          alt="André"
+          alt={teacher.name}
         />
         <div>
-          <strong>André Idalgo Matama</strong>
-          <span>Química</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
-      <p>
-        Caros amigos, a infinita diversidade da realidade única nos obriga à
-        análise das condições epistemológicas e cognitivas exigidas. Por outro
-        lado, a complexidade dos estudos efetuados nos obriga a inferir a
-        invalidez da fundamentação metafísica das representações.
-      </p>
+      <p>{teacher.bio}</p>
       <footer>
         <p>
           Preço/hora
-          <strong>R$ 80,00</strong>
+          <strong>R$ {teacher.cost}</strong>
         </p>
-        <a href="">
+        <a
+          onClick={createNewConnection}
+          target="blank"
+          href={`https://wa.me/${teacher.whatsapp}`}
+        >
           <img src={whatsappIcon} alt="Whatsapp" />
           Entrar em contato
         </a>
       </footer>
     </article>
   );
-}
+};
 
 export default TeacherItem;

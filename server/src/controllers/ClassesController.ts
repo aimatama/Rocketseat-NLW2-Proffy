@@ -51,6 +51,8 @@ export default class ClassesController {
       schedule,
     } = request.body;
 
+    console.log(request.body);
+
     const trx = await db.transaction();
 
     try {
