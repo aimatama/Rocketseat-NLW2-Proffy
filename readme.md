@@ -22,24 +22,26 @@
 
 ---
 
-## 💬 Sobre 
+## 💬 Sobre
 
 O projeto Proffy foi desenvolvido no evento **[Next Level Week #2](https://nextlevelweek.com/)** realizado em agosto de 2020.
 
 ## 🏁 Status do projeto
 
-🚧  Em construção...
+🚧 Em construção...
 
---- 
+---
 
-## 🖥 Screenshots 
+## 🖥 Screenshots
 
 <p align="center">
-    <img src="./.github/screenshot01.png">
+    <img src="./screenshots/screenshot01.png">
 </p>
-
 <p align="center">
-    <img src="./.github/screenshot01.png">
+    <img src="./screenshots/screenshot02.png">
+</p>
+<p align="center">
+    <img src="./screenshots/screenshot03.png">
 </p>
 ---
 
@@ -47,10 +49,10 @@ O projeto Proffy foi desenvolvido no evento **[Next Level Week #2](https://nextl
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-* [Typescript](https://www.typescriptlang.org/)      
-* [React](https://reactjs.org/)      
+- [Typescript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
 
---- 
+---
 
 ## ▶️ Como executar o projeto
 
@@ -81,7 +83,7 @@ Para acessar a aplicação abra o seu navegador WEB e acesse a URL `http://local
 
 ## 📜 Licença
 
-O projeto está sob a licença [MIT](./LICENSE) ❤️ 
+O projeto está sob a licença [MIT](./LICENSE) ❤️
 
 ---
 
@@ -89,7 +91,7 @@ O projeto está sob a licença [MIT](./LICENSE) ❤️
 
 Para falar comigo:
 <br/><br/>
- [![Linkedin Badge](https://img.shields.io/badge/-AIMatama-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/aimatama/)](https://www.linkedin.com/in/aimatama/) 
+[![Linkedin Badge](https://img.shields.io/badge/-AIMatama-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/aimatama/)](https://www.linkedin.com/in/aimatama/)
 [![Gmail Badge](https://img.shields.io/badge/-aimatama@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:aimatama@gmail.com)](mailto:aimatama@gmail.com)
 <br/>
 Gostou do projeto? Deixe uma estrelinha para ajudar!!! ⭐
