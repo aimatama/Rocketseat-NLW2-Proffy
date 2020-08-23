@@ -67,7 +67,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 git clone https://github.com/aimatama/Proffy.git
 
 # Acesse a pasta do Server Web
-> cd ..
 > cd server
 
 # Instale as dependências do projeto
@@ -77,6 +76,7 @@ git clone https://github.com/aimatama/Proffy.git
 > yarn start
 
 # Acesse a pasta do App Web
+> cd ..
 > cd web
 
 # Instale as dependências do projeto
