@@ -33,7 +33,11 @@ export default class ClassesController {
           .whereRaw('`class_schedule`.`from` <= ?? ', [timeInMinutes])
           .whereRaw('`class_schedule`.`to` > ?? ', [timeInMinutes]);
       })
-      .where('classes.subject', '=', subject)
+      /*.where('classes.subject', 'ILIKE', subject)*/
+      .whereRaw(
+        'LOWER(classes.subject) LIKE ?',
+        '%' + subject.toLowerCase() + '%'
+      )
       .join('users', 'classes.user_id', '=', 'users.id')
       .select(['classes.*', 'users.*']);
 
